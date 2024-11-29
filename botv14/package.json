@@ -1,0 +1,22 @@
+{
+  "name": "discord-ticket-bot",
+  "version": "1.0.0",
+  "description": "Bot Discord de gestion des tickets et absences",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "pm2:start": "pm2 start ecosystem.config.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.3.1",
+    "mysql2": "^3.6.5",
+    "sequelize": "^6.35.1",
+    "pm2": "^5.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
